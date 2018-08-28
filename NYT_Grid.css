@@ -1,0 +1,249 @@
+/* FRAMEWORK **********************************************************
+
+	This stylesheet is primarily adhering to the BEM framework.
+	======
+	.block-name
+	.block-name__element-name
+	.block-name__element-name--modifier / block-name--modifier
+	=====
+
+/* KEY *****************************************************************
+	
+	=====
+	a) VARIABLES
+	b) BASE (styling of raw elements)
+	c) BLOCKS
+	d) ELEMENTS
+	e) MODIFIERS
+		ee) STATE MODIFIERS
+	f) MEDIA QUERIES
+	=====
+
+/* a) VARIABLES ********************************************************/
+
+
+
+
+
+
+
+/* b) BASE *************************************************************/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+
+
+
+/* c) BLOCKS ***********************************************************/
+
+.body {
+	margin:0 40px 0 40px;
+	display:grid;
+	grid-template-rows: 23em 19em 9em 16em 16em 13em 28em 31em 10em 14em 14em 15em 30em 26em;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad"
+	"header header header header header header header header header header header header"
+	"subhead1 subhead1 subhead1 subhead2 subhead2 subhead2 subhead3 subhead3 subhead3 subhead4 subhead4 subhead4 "
+	"main main main main main main main main opinion0 opinion0 opinion0 opinion0"
+	"main main main main main main main main opinion1 opinion1 opinion1-pic opinion1-pic"
+	"main main main main main main main main opinion1 opinion1 opinion2 opinion2"
+	"main2 main2 main2 main2__sub main2__sub main2__sub  main3 main3 opinion1 opinion1 opinion2 opinion2"
+	"main4 main4 main4 main4__sub main4__sub main4__sub main5 main5 editor editor editor editor"
+	"main4 main4 main4 main6 main6 main6 main6 main6 editor editor editor editor"
+	"main7 main7 main7 main7__sub main7__sub main7__sub main8 main8 editor editor editor editor"
+	"main7 main7 main7 main7__sub main7__sub main7__sub main8 main8 opinion3 opinion3 opinion4 opinion4"
+	"main9 main9 main9 main9__sub main9__sub main9__sub main9__sub main9__sub opinion3 opinion3 opinion4 opinion4"
+	"main10 main10 main10 main10__sub main10__sub main10__sub main10__sub main10__sub opinion3 opinion3 opinion4 opinion4"
+	"hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2";
+	
+
+	
+
+}
+
+
+.header {
+	grid-area:header;
+	background-color: pink;
+	
+}
+
+.hero-ad {
+	grid-area:hero-ad;
+	background-color: #ff1493;
+}
+
+.subhead1 {
+	grid-area:subhead1;
+	background-color: green;
+}
+
+.subhead2 {
+	grid-area:subhead2;
+	background-color: orange;
+}
+
+.subhead3 {
+	grid-area:subhead3;
+	background-color: cyan;
+}
+
+.subhead4 {
+	grid-area:subhead4;
+	background-color: grey;
+}
+
+.main {
+	grid-area: main;
+	background-color: yellow;
+}
+
+.main2 {
+	grid-area: main2;
+	background-color: red;
+}
+
+.main2__sub {
+	grid-area: main2__sub;
+	background-color: navy;
+}
+
+.main3 {
+	grid-area: main3;
+	background-color: pink;
+}
+
+.main4{
+	grid-area: main4;
+	background-color: purple;
+}
+
+.main4__sub {
+	grid-area: main4__sub;
+	background-color: lime;
+}
+
+.main5 {
+	grid-area: main5;
+	background-color: tan;
+}
+
+.main6 {
+	grid-area: main6;
+	background-color: lavender;
+}
+
+.main7 {
+	grid-area: main7;
+	background-color: teal;
+}
+
+.main7__sub {
+	grid-area: main7__sub;
+	background-color: yellow;
+}
+
+.main8 {
+	grid-area: main8;
+	background-color: violet;
+}
+
+.main9 {
+	grid-area: main9;
+	background-color: aqua;
+}
+
+.main9__sub {
+	grid-area: main9__sub;
+	background-color: red;
+}
+
+.main10 {
+	grid-area: main10;
+	background-color: navy;
+}
+
+.main10__sub {
+	grid-area: main10__sub;
+	background-color: blue;
+}
+
+.editorpicks {
+	grid-area: editor;
+	background-color: hotpink;
+}
+
+.opinion0 {
+	grid-area:opinion0;
+	background-color: turquoise;
+}
+
+
+.opinion1 {
+	grid-area: opinion1;
+	background-color: darkorange;
+}
+
+.opinion1-pic {
+	grid-area: opinion1-pic;
+	background-color: navy;
+}
+
+.opinion2 {
+	grid-area: opinion2;
+	background-color: maroon;
+}
+
+.opinion3 {
+	grid-area: opinion3;
+	background-color: darkorange;
+}
+
+.opinion4 {
+	grid-area: opinion4;
+	background-color: maroon;
+}
+
+.hero-ad2  {
+	grid-area: hero-ad2;
+	background-color: #ff1493;
+}
+
+/* d) ELEMENTS *********************************************************/
+
+
+/* e) MODIFIERS ********************************************************/
+
+
+/* ee) STATE MODIFIERS *************************************************/
+
+
+
+
+
+/* f) MEDIA QUERIES ****************************************************/
+
+@media only screen and (max-width: )
+
+
+
+/* a) VARIABLES ********************************************************/
+
+
+
+
+
+
+
+
+
+/* a) VARIABLES ********************************************************/
+/* b) BASE *************************************************************/
+/* c) BLOCKS ***********************************************************/
+/* d) ELEMENTS *********************************************************/
+/* e) MODIFIERS ********************************************************/
+/* ee) STATE MODIFIERS *************************************************/
+/* f) MEDIA QUERIES ****************************************************/
