@@ -71,6 +71,7 @@
 
 .header {
 	grid-area:header;
+	
 	background-color: pink;
 	
 }
@@ -91,7 +92,7 @@
 }
 
 .subhead3 {
-	grid-area:subhead3;
+	grid-area:subhead3; 
 	background-color: cyan;
 }
 
