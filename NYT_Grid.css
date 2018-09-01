@@ -71,8 +71,7 @@
 
 .header {
 	grid-area:header;
-	
-	background-color: pink;
+background-color: pink;
 	
 }
 
