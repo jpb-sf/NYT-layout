@@ -175,7 +175,7 @@
 	background-color: hotpink;
 }
 
-.editorpicks {
+.editor1 {
 	grid-area: editor;
 	background-color: blue;
 }
@@ -333,13 +333,86 @@
 }
 
 .subhead4 {
+	display:none;v
+}
+
+}
+
+
+
+@media only screen and (max-width:1000px) {
+
+.body {
+	grid-template-rows: 7em 10em 10em 30em 31em 10em 10em 14em 14em 15em 12em 20em 13em 30em 18em 30em 18em 30em 18em 30em 18em 40em 40em 50em 31em;
+	grid-template-areas:
+	/* row 1–4 */
+	
+	"header header header header header header header header header header header header header header header header header header header header header header header header"
+	"subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 subhead1 "
+	"subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2 subhead2"
+	"main main main main main main main main main main main main main main main main main main main main main main main main"
+	/* row 5–8 */
+	
+	"hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad hero-ad"
+	"main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2 main2"
+	"main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3 main3  "
+	"main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub main4__sub "
+
+	/* row 9–13 */
+	"main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4 main4"
+	"main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5 main5"
+	"main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6 main6   "
+	"main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub main7__sub"
+	"main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7 main7"
+	"main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub main9__sub"
+	"main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9 main9"
+
+	/* row 14 */
+	"main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10 main10"
+	"main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub main10__sub"
+	/* added row below */
+	"opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic opinion0-pic "
+	"opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0 opinion0"
+	"opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic opinion00-pic"
+	"opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00 opinion00"
+	"opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 opinion1 "
+	/* added row above */
+	" editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor editor "
+	" editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2 editor2"
+	"hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2 hero-ad2";
+	
+}
+
+.opinion0-pic {
+	display:grid;
+}
+
+.opinion2 {
+	display:none;
+}
+
+.editor2-pic {
+	display: none;
+
+}
+
+.subhead3 {
+	display:none;
+}
+
+.subhead4 {
+	display:none;
+}
+
+.main8 {
+	display:none;
+}
+
+.main2__sub {
 	display:none;
 }
 
 }
-
-
-
 
 
 
