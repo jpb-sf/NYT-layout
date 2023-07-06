@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jason Bergland Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="static/css/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="static/css/mq_styles.css">
+	<script src="https://kit.fontawesome.com/be24e5d254.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="header__wrapper">
+		<div class="header__navwrapper">
+			<div class="header__navcontainer">
+				<a href="#" class="header__btn--index f__icons--k"><span class="fas fa-bars"></span></a>
+				<form action="" method="get" id="search" onsubmit="return returnQuery(document.querySelector('#query').value)">
+					<button type="submit" class="header__btn--search f__icons--k"><span class="fas fa-search"></span></button>
+					<input type="text" class="header__srch" id="query">
+				</form>
+			</div>
+			<div class="header__langcontainer f__h6 s<h2>__nobullets">
+				<a href="#" class="padding-10 s__textdec--none s__color--dark">English</a>
+				<a href="#" class="padding-10 s__textdec--none s__color--dark">Español</a>
+				<a href="#" class="padding-5 s__textdec--none s__color--dark"><span>中文</span>(Chinese)</a>
+			</div>
+			<div class="header__emptycontainer"></div>
+		</div>
+
+		<!-- NYT Logo, Today's date. Newspaper sections -->
+		<h1><img class="header__logo" src="static/news_site/assets/news_times_logo.png" height="auto" alt="The News Times"></h1>
+	
+		<div class="header__datewrap">
+			<p class="header__date f__h6">
+				<span class="header__weekday"></span>
+				<span class="header__month"></span> 
+				<span class="header__day"></span> 
+				<span class="header__year"></span>
+			</p>
+			<p class="header__todays f__h6 s__pos__relative">Today's Paper</p>
+			<div class="header__btnR">
+				<a target="_blank" href="https://www.nytimes.com/subscription?campaignId=797YR&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2F" class="header__btnSub header__btn--logsub">Subscribe Now</a>
+				
+				<a target="_blank" href="https://myaccount.nytimes.com/auth/login?response_type=cookie&client_id=vi&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fmultiproduct%2Flp8KQUS.html%3FcampaignId%3D7QQFH%26EXIT_URI%3Dhttps%253A%252F%252Fwww.nytimes.com%252F" class="header__btnLog header__btn--logsub">Log In</a>
+			</div>
+		</div>
+
+		<hr class="hr1">
+		<ul class="header__index">
+			<a target="_blank" href="https://www.nytimes.com/section/world" ><h2 class="newsSection f__h6">World</h2></a>
+			<a target="_blank" href="https://www.nytimes.com/section/us" ><h2 class="newsSection f__h6">US</h2></a>
+			<a target="_blank" href="https://www.nytimes.com/section/politics" ><h2 class="newsSection f__h6">Politics</h2></a>
+			<a target="_blank" href="https://www.nytimes.com/section/nyregion" ><h2 class="newsSection f__h6">N.Y.</h2></a>
+			<a target="_blank" href="https://www.nytimes.com/section/business" ><h2 class="newsSection f__h6">Business</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Opinion</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Tech</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Science</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Health</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Sports</h2></a>
+			<a target="_blank" href="https://www.nytimes.com/section/arts" ><h2 class="newsSection f__h6">Arts</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Books</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Style</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Food</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Travel</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Magazine</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">T Magazine</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Real Estate</h2></a>
+			<a target="_blank" href="#" ><h2 class="newsSection f__h6">Video</h2></a>
+		</ul>
+		<hr class="hr2">
+	</header>
+		
+<div class="body">
+
+
+<!-- Top Nav buttons (Hamburger, Search bar, Login, Subscribe, Language options) -->	
+	<section class="subhead__container">
+		<div class="subhead1">
+			<img src="static/news_site/assets/daily.png" alt="daily image" height="auto" class="subhead1__img">
+			<div>
+				<h2 class="f__subhead--nav s__mt--1">Listen to 'The Daily'</h2>
+				<p class="f__subhead--secondary s__mt--p5"> Here's what you need to know to start your day. </p>
+			</div>
+		</div>
+		<div class="subhead2">
+			<p class="fas fa-comment subhead2__icon"></p>
+			<div>
+				<h2 class="f__subhead--nav s__mt--1">Got a News Tip?</h2>
+				<p class="f__subhead--secondary s__mt--p5"> Do you have the next big story? Share it with our journalists.</p>
+			</div>
+		</div>
+		<div class="subhead3">
+			<img src="static/news_site/assets/daily.png" alt="daily image" class="subhead3__img">
+			<div>
+				<h2 class="f__subhead--nav s__mt--1">'On Topic' Today</h2>
+				<p class="f__subhead--secondary s__mt--p5"> Read the latest here.</p>
+			</div>
+		</div>
+		<div class="subhead-ws">
+			<div class="subhead-ws__textcontainer">
+				<p class="f__h6">S.&.P 500</p>
+				<p class="f__h6 f__h6--green"> +0.35&#37 <span class="f__stock-arrow"> <!-- market arrow --> &#x2191</span ></p>
+			</div>
+			<hr class="subhead-ws__hr">
+			<div class="subhead-ws__textcontainer">
+				<p class="f__h6">Dow</p>
+				<p class="f__h6 f__h6--green"> +1.34&#37 <span class="f__stock-arrow"> <!-- market arrow --> &#x2191</span ></p>
+			</div>
+			<hr class="subhead-ws__hr">
+			<div class="subhead-ws__textcontainer">
+				<p class="f__h6">Nasdaq</p>
+				<p class="f__h6 f__h6--green"> +0.78&#37 <span class="f__stock-arrow"> <!-- market arrow --> &#x2191</span ></p>
+			</div>
+		</div>
+		<div class="subhead-tw">
+			<div class="subhead-tw__container">
+				<p class="subhead-tw__icon"></p>
+				<p class="subhead-tw__cur"></p>
+				<p class="subhead-tw__high"></p>
+				<p class="subhead-tw__low"></p>
+			</div>
+			<p class="subhead-tw__city">Sacramento, CA</p>
+		</div>
+	<hr class="hr3"></hr>
+	<hr class="hr4"></hr>
+	</section>
+	
+	<section class="main__wrapper">
+		<div class="main__primary--textcontainer">
+			<h4 class="f__article--large f__article--largecustom">This is a happy headline that is place holding.</h4>
+			<ul class="main__text--ul">
+				<li class="main__text--li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error cupiditate labore optio nam consequatur laborum nostrum architecto! Reiciendis cupiditate ex quia adipisci nulla Eveniet dolore eos neque, ex amet at! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptatum officia dolorum, excepturi voluptate similique odit adipisci inventore sapiente maiores minima blanditiis. Quo sequi magni labore, voluptates soluta ratione iure nobis magnam maiores iste vitae qui doloribus, dolor voluptatem fugit nihil ad a possimus cupiditate commodi iusto dolorem? Dolor, libero.
+				</li>
+				<li class="main__text--li">Aspernatur labore esse molestiae blanditiis? Dicta reiciendis, inventor velit repellendus itaque ea magnam odit totam iste animi, pariatur! Necessitatibus culpa voluptas quidem!</li>
+				<p class="f__age">1h ago</p>
+			</ul>
+		</div>
+		<div class="main__primary--imgcontainer">
+			<img src="static/news_site/images/boardwalk.jpg" alt="Boardwalk in the evening" class="main__img" height="auto">
+			<div class="main__caption--wrapper">
+			<p class="main__caption f__caption">Cheese-stuffed bratwurst and cotton candy sales were booming as the boardwalk bustled on Saturday night prior to the rains.</p>
+			<span class="main__img--credit f__credit"> Sergey Ponomarev for The News Times</span>
+			</div>
+		</div>
+
+		<div class="main__secondary--subwrapper">
+			<div class="main__secondary--container1">
+				<h4 class="f__article">This is a happy headline that is place holding.</h4>
+				<ul class="main__text--ul">
+					<li class="main__text--li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error cupiditate labore optio nam consequatur laborum nostrum architecto! Reiciendis cupiditate ex quia adipisci nulla Eveniet dolore eos neque, ex amet at! lorem30
+					</li>
+					<li class="main__text--li">Aspernatur labore esse molestiae blanditiis? Dicta reiciendis, inventor velit repellendus itaque ea magnam odit totam iste animi, pariatur! Necessitatibus culpa voluptas quidem!</li>
+				
+					<p class="f__age">19m ago</p>
+				</ul>
+			</div>
+			<div class="main__secondary--container2">
+				<h4 class="f__article">This is a happy headline that is place holding.</h4>
+				<p class="f__age">2h ago</p>
+			</div>
+		</div>
+
+		
+	</section>
+
+	<section class="opinion__wrapper">
+		<h3 class="f__section f__section--serif opinion__title">Opinion</h3>
+		<div class="opinion__2column--wrapper">
+			<a href="#" class="opinion__2column--container">
+				<div class="opinion__2column--imgcontainer">
+					<img src="static/news_site/images/tokyo.jpg" alt="Tokyo at night" width="800px" height="800px" class="opinion__2column--img">
+				</div>
+				<div class="opinion__2column--textcontainer">
+					<div class="opinion__2column--textcontainer2">
+						<h4 class="f__columnist">Miles Goodman</h4>	
+						<h4 class="f__article f__article--pthalf">This is a happy headline that is place holding.</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error cupiditate labore optio nam consequatur laborum nostrum architecto! Reiciendis cupiditate ex quia adipisci nulla Eveniet dolore eos neque, ex amet at!
+						</p>
+						<p class="f__age">1h ago</p>
+					</div>
+					<img class="opinion__img--columnist" src="static/news_site/assets/columnists/miles_goodman.jpg" alt="columnist image" width="50px">
+				</div>
+			</a>
+
+			<a href="#" class="opinion__2column--container">
+				<div class="opinion__2column--imgcontainer">
+					<img src="static/news_site/images/climate_change2.jpg" alt="Climate change flyer" width="800px" height="800px" class="opinion__2column--img">
+				</div>
+				<div class="opinion__2column--textcontainer">
+					<div class="opinion__2column--textcontainer2">
+						<h3 class="f__columnist">Castalia Sosa</h4>		
+						<h4 class="f__article f__article--pthalf">This is a happy headline that is place holding.</h4>
+						<p>Nam consequatur laborum nostrum architecto. Adipisci nulla nveniet dolore eos teli.
+						</p>
+						<p class="f__age">30m ago</p>
+					</div>
+					<img class="opinion__img--columnist" src="static/news_site/assets/columnists/cecily-strong-2021-450x600_0.jpg" alt="columnist image" width="50px">
+				</div>
+			</a>
+		</div>
+		<div class="opinion__1column--wrapper">
+				<a href="" class="opinion__1column--container">
+					<!-- <div class="rule__horizontalcross--light rule__horizontalcross--light10"></div> -->
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Peter Reusse</h3>
+						<h4 class="f__article f__article--pthalf">Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
+					</div>
+					<!-- <img class="opinion__img--columnist opinion__img--columnist2" src="static/news_site/assets/columnists/MV563L_.jpg" alt="columnist image" width="50px"> -->
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Bree Tomlin</h3>
+						<h4 class="f__article f__article--pthalf">Impedit vel fugiat id aliquid tenetur aperiam!</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">James Souhan </h3>
+						<h4 class="f__article f__article--pthalf">Ipsa, quaerat quae consequuntur soluta debitis ab!</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Alisa Goya</h3>
+						<h4 class="f__article f__article--pthalf">Ut, laudantium. Facilis porro quam nulla corrupti!</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Nima Atake</h3>
+						<h4 class="f__article f__article--pthalf">Veniam molestias hic doloremque, incidunt dolorem pariatur.</h4>
+					</div>
+				</a>
+			
+			<!-- <div class="opinion__1column--subwrapper"> -->
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Jon Hal</h3>
+						<h4 class="f__article f__article--pthalf">Nesciunt error sapiente id iusto. Accusantium, sequi.</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Bryer Naylin</h3>
+						<h4 class="f__article f__article--pthalf">Reprehenderit sunt laborum ex nesciunt vel, accusamus?</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Gayle Jackson</h3>
+						<h4 class="f__article f__article--pthalf">Perspiciatis perferendis id fugiat voluptate facilis necessitatibus.</h4>
+					</div>
+				</a>
+				<a href="" class="opinion__1column--container">
+					<!-- **** SMARTER ****** -->
+					<div class="rule__horizontalcross--light rule__horizontalcross--light10"></div>
+					<div class="opinion__1column--textcontainer">
+						<h3 class="f__columnist">Ruby Lee</h3>
+						<h4 class="f__article f__article--pthalf">Quisquam nemo adipisci repellat assumenda, neque, animi!</h4>
+					</div>
+				</a>
+			
+		</div>
+	</section>
+	<section class="threeblock__wrapper">
+		<a href="#" class="threeblock__text--container">
+			<div>
+				<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+				<p class="f__age">1h ago</p>
+			</div>
+		</a>
+		<a href="#" class="threeblock__img--container">
+			<div>
+				<img class="threeblock__img" src="static/news_site/images/two_men_talking.jpg" alt="Two men talking"  width="800px" height="auto">
+				<p class="f__caption"> Adipisicing elit. Explicabo amet odio soluta modi voluptatibus, quo.</p>
+				<p class="f__credit">Duane Kendall for The News Times</p>
+			</div>
+		</a>
+		<a href="#" class="threeblock__sml">
+			<div>
+				<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus.</p>
+				<p class="f__age">7h ago</p>
+			</div>
+			</a>
+	</section>
+	<section class="threeblock__wrapper2">
+			<a href="#" class="threeblock__text--container">
+				<div>
+					<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollit Mahi!</p>
+					<p class="f__age">49m ago</p>
+				</div>
+			</a>
+			<a href="#" class="threeblock__img--container">
+				<div>
+					<img class="threeblock__img" src="static/news_site/images/south_pacific.jpg" alt="South Pacific"  width="800px" height="auto">
+					<p class="f__caption"> Lorem ipsum dolor sit amet consectetur elit. A cim magnam eaque corporis maxime similique?</p>
+					<p class="f__credit">Marie Pham, AP News</p>
+				</div>
+			</a>
+			<a href="#" class="threeblock__sml">
+				<div>
+					<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+					<p class="f__age">4h ago</p>
+				</div>
+			</a>
+	</section>
+	<section class="oneblock--wrapper">
+		<a href="#" class="one__block--text">
+			<div>
+				<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing, elit. A non consequuntur aperiam nam dolor ex pariatur aoloremque, repellat.</h4>
+				<p class="f__age">11h ago</p>
+			</div>
+		</a>
+	</section>
+	<section class="editorpicks__wrapper">
+		<div class="rule__doublehorizontal--heavy"></div>
+		<div class="rule__doublehorizontal--heavy2"></div>
+		<h3 class="f__section editorspicks__header">Editor's Picks</h3>
+		<div class="editorpicks__subwrapper">
+			<a href="#" class="editorpicks__top--container">
+				<div class="editorpicks__top--imgcontainer">
+					<img class="editorpicks__top--img" src="static/news_site/images/woman_diner.jpg" alt="woman smiling, eating at diner"  width="800px" height="auto">
+					<p class="f__credit">Susan Steimer for The News Times</p>
+				</div>
+				<div class="editorpicks__top--textcontainer">
+					<h4 class="f__article--large">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+					<p class="f__age">Travel 10h ago</p>
+				</div>
+			</a>
+			<div class="editorpicks__secondary--wrapper">
+				 <a href="#" class="editorpicks__secondary--container">
+					<div class="editorpicks__secondary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">Art & Design 2h ago</p>
+					</div>
+					<div class="editorpicks__secondary--imgcontainer">
+						<img class="editorpicks__secondary--img" src="static/news_site/images/cartoon_guys2.jpg" alt="cartoon gang"  width="800px" height="auto">
+					</div>
+				</a>
+				<a href="#" class="editorpicks__secondary--container">
+					<div class="editorpicks__secondary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">Sciences 9h ago</p>
+					</div>
+					<div class="editorpicks__secondary--imgcontainer">
+						<img class="editorpicks__secondary--img" src="static/news_site/images/blue_sphere.jpg" alt="blue sphere"  width="800px" height="auto" >
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="threeblock__wrapper3">
+		<a href="#" class="threeblock__text--container">
+			<div>
+				<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+				<p class="f__age">2h ago</p>
+			</div>
+		</a>
+		<a href="#" class="threeblock__img--container">
+			<div>
+				<img class="threeblock__img" src="static/news_site/images/children_smiling.jpg" alt="Children smiling"  width="800px" height="auto">
+			</div>
+		</a>
+		<a href="#" class="threeblock__sml--caption">
+			<div>
+				<p class="f__caption">Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus dolore eos neque.</p>
+				<p class="f__credit">Stephen Bergen</p>
+			</div>
+		</a>
+	</section>
+	<section class="twoblock__onestory--wrapper">
+		<a href="#" class="twoblock__onestory--headercontainer">
+			<div>
+				<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repelavew.</h4>
+			</div>
+		</a>
+		<a href="#" class="twoblock__onestory--bodycontainer">
+			<div>		
+				<ul class="main__text--ul">
+					<li class="main__text--li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error cupiditate labore optio nam consequatur laborum nostrum architecto! Reiciendis cupiditate ex quia adipisci nulla Eveniet dolore eos neque, ex amet at! lorem30
+					</li>
+					<li class="main__text--li">Aspernatur labore esse molestiae blanditiis? Dicta reiciendis, inventor velit repellendus itaque ea magnam odit totam iste animi, pariatur! Necessitatibus culpa voluptas quidem!</li>
+			
+					<p class="f__age f__age--updated">Updated 3h ago</p>
+				</ul>					
+			</div>
+		</a>
+
+	</section>
+	<section class="twoblock__onestorywithimage--wrapper">
+		<a href="#" class="twoblock__onestorywithimage--textcontainer">
+			<div>
+				<h4 class="f__article--large">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+			</div>
+			<p class="f__age">2h ago</p>
+		</a>
+		<a href="#" class="twoblock__onestorywithimage--imgcontainer">	
+			<img class="twoblock__onestorywithimage--img" src="static/news_site/images/science_research.jpg" alt="Researchers on platorm at sea"  width="1000px" height="auto">
+			<p class="f__credit">Paul Cronwell</p>
+		</a>
+	</section>
+
+	<section class="othernews__wrapper">
+		<h3 class="f__section">In Other News</h3>
+		<div class="othernews__subwrapper">
+			<a href="#" class="othernews__top--container">
+				<div class="othernews__top--imgcontainer">
+					<img class="othernews__top--img" src="static/news_site/images/man_tractor.jpg" alt="Man driving tractor through field" width="800px" height="auto">
+					<p class="f__credit">Susan Steimer for The News Times</p>
+				</div>
+				<div class="othernews__top--textcontainer">
+					<h4 class="f__article--large">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+					<p class="f__age">5h ago</p>
+				</div>
+			</a>
+			<div class="othernews__secondary--wrapper">
+				<a href="#" class="othernews__secondary--container">
+					<div class="othernews__secondary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">9h ago</p>
+					</div>
+					<div class="othernews__secondary--imgcontainer">
+						<img class="othernews__secondary--img" src="static/news_site/images/polarbear.jpg" alt="Polar bear" height="auto">
+					</div>
+				</a>
+				<a href="#" class="othernews__secondary--container">
+					<div class="othernews__secondary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">7h ago</p>
+					</div>
+					<div class="othernews__secondary--imgcontainer">
+						<img class="othernews__secondary--img" src="static/news_site/images/engineers.jpg" alt="Engineers" height="auto">
+					</div>
+				</a>
+				<a href="#" class="othernews__secondary--container">
+					<div class="othernews__secondary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">11h ago</p>
+					</div>
+					<div class="othernews__secondary--imgcontainer">
+						<img class="othernews__secondary--img" src="static/news_site/images/camels.jpg" alt="Camels walking through desert" height="auto">
+					</div>
+				</a>
+			</div>
+			<div class="othernews__tertiary--wrapper">
+				<a href="#" class="othernews__tertiary--container">
+					<div class="othernews__tertiary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					</div>
+				</a>
+				<a href="#" class="othernews__tertiary--container">
+					<div class="othernews__tertiary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					</div>
+				</a>
+				<a href="#" class="othernews__tertiary--container">
+					<div class="othernews__tertiary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					</div>
+				</a>
+				<a href="#" class="othernews__tertiary--container">
+					<div class="othernews__tertiary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					</div>
+				</a>
+				<a href="#" class="othernews__tertiary--container">
+					<div class="othernews__tertiary--textcontainer">
+						<h4 class="f__article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="smarterliving__wrapper">
+		<h3 class="f__section">Smarter Living</h3>
+		<div class="smarterliving__subwrapper">
+			<a href="#" class="smarterliving__container">
+					<img class="smarterliving__img" src="static/news_site/images/2boys.jpg" alt="Wheat Field" height="auto">
+				<div class="smarterliving__textcontainer">
+					<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p class="f__age">Smarter Living 4h ago</p>
+				</div>
+			</a>
+			<a href="#" class="smarterliving__container">
+				<img class="smarterliving__img" src="static/news_site/images/charging_car2.jpg" alt="Wheat Field" height="auto">
+				<div class="smarterliving__textcontainer">
+					<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4">
+					<p class="f__age">Smarter Living 6h ago</p>
+				</div>
+			</a>
+			<a href="#" class="smarterliving__container">
+				<img class="smarterliving__img" src="static/news_site/images/walking_friends.jpg" alt="Wheat Field" height="auto">
+				<div class="smarterliving__textcontainer">
+					<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p class="f__age">Wellness 7h ago</p>
+				</div>
+			</a>
+			<a href="#" class="smarterliving__container">
+				<img class="smarterliving__img" src="static/news_site/images/bicycle_foodbasket.jpg" alt="Wheat Field" height="auto">
+				<div class="smarterliving__textcontainer">
+					<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p class="f__age">Wellness 11h ago</p>
+				</div>
+			</a>
+			<a href="#" class="smarterliving__container">
+				<img class="smarterliving__img" src="static/news_site/images/arrows.jpg" alt="Wheat Field" height="auto">
+				<div class="smarterliving__textcontainer">
+					<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p class="f__age">Smarter Living 7h ago</p>
+				</div>
+			</a>
+		</div>
+	</section>
+	<section class="features__wrapper">
+		<h3 class="f__section">Features</h3>
+		<div class="features__subwrapper">
+			<a href="#" class="features__top--container">
+				<div class="features__top--imgcontainer">
+					<img class="features__top--img" src="static/news_site/images/painting_woman.jpg" alt="Wheat Field"  width="1200px" height="auto">
+					<p class="f__credit">Rena Gupta for The News Times</p>
+				</div>
+				<div class="features__top--textcontainer">
+					<h4 class="f__article--large f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Doloremque, repellat.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. A non consequuntur, aperiam nam dolor ex pariatur, fugiat blanditiis voluptatum consectetur illum reiciendis, necessitatibus ipsum! Suscipit, inventore nihil! Mollitia!</p>
+					<p class="f__age">12h ago</p>
+				</div>
+			</a>
+			<div class="features__secondary--wrapper">
+				<a href="#" class="features__secondary--container">
+					<img class="features__secondary--img" src="static/news_site/images/lifeguards.jpg" alt="Wheat Field" >
+					<div class="features__secondary--textcontainer">
+						<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">Movies 9h ago</p>
+					</div>
+				</a>
+				<a href="#" class="features__secondary--container">
+					<img class="features__secondary--img" src="static/news_site/images/virtual_glasses.jpg" alt="Wheat Field" >
+					<div class="features__secondary--textcontainer">
+						<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">Tech 5h ago</p>
+					</div>
+				</a>
+				<div class="rule__horizontalcross--light2"></div>	
+				<a href="#" class="features__secondary--container">
+					<img class="features__secondary--img" src="static/news_site/images/man_computer.jpg" alt="Wheat Field" >
+					<div class="features__secondary--textcontainer">
+						<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">New York 8h ago</p>
+					</div>
+				</a>				
+				<a href="#" class="features__secondary--container">
+					<img class="features__secondary--img" src="static/news_site/images/hotair_baloons.jpg" alt="Wheat Field" >
+					<div class="features__secondary--textcontainer">
+						<h4 class="f__article f__article--pt1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam?</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo enim aperiam ad fugit sit animi architecto quo, delectus sunt quasi minus?</p>
+						<p class="f__age">Travel 7h ago</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	</div>
+<!--Listen to the daily  -->
+
+	<script src="static/js/date_weather_script.js"></script>
+	<script src="static/js/search_script.js"></script>
+</body>
+</html>
+
+
