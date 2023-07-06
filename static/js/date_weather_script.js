@@ -5,7 +5,7 @@ Link for sample of API's JSON format:
 https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22 
 */
 
-const apiKey = "2576ecf2328c1aaf7d399b1466dfe23d";
+const apiKey = date_weather_key;
 
 // Function converts Kelvin nits fo Fahrenheit
 let kelvToFahren = function(k)
